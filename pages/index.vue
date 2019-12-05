@@ -3,27 +3,21 @@
     <div>
       <logo />
       <h1 class="title">
-        dist29
+        SSR のデモ中！
       </h1>
       <h2 class="subtitle">
-        My sensational Nuxt.js project
+        Microsoft Ignite The Tour
       </h2>
+
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
+        <nuxt-link to="about" class="button--grey">
+          about - SPA
+        </nuxt-link>
+        <a href="about" class="button--green">
+          about - SSR
         </a>
       </div>
+
     </div>
   </div>
 </template>
@@ -49,8 +43,8 @@ export default {
 }
 
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
