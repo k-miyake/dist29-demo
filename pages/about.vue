@@ -3,7 +3,7 @@
     <div>
       <logo />
       <h1 class="title">
-        dist29
+        MITT
       </h1>
       <h2 class="subtitle">
         ここはAboutページです
