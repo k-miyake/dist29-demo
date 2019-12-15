@@ -16,5 +16,5 @@ steps:
   displayName: 'npm install and build'
 
 - task: PublishBuildArtifacts@1
-  inputs: 
-    pathtoPublish: $(build.artifactstagingdirectory) # dist or build files
+  inputs:
+    PathtoPublish: '$(System.DefaultWorkingDirectory)'
