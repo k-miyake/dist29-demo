@@ -19,6 +19,8 @@ steps:
   inputs:
     Contents: |
       .nuxt/**/*
+      /**/*
+      nuxt.config.js
       package*.json
     TargetFolder: 'publish'
 
