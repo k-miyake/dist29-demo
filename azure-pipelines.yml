@@ -21,3 +21,8 @@ steps:
       .nuxt/**/*
       package*.json
     TargetFolder: 'publish'
+
+- script: |
+    npm ci --production
+  workingDirectory: 'publish'
+  displayName: 'npm ci --production'
