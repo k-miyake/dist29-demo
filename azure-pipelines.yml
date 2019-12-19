@@ -36,3 +36,13 @@ steps:
 
 - publish: $(Build.BuildNumber).zip
   artifact: packed
+
+- task: AzureWebApp@1
+  inputs:
+    azureSubscription: 'nuxt-ci'
+    appType: 'webAppLinux'
+    appName: 'nuxt-ci'
+    deployToSlotOrASE: true
+    slotName: az-pipelines
+    package: '$(Build.SourcesDirectory)/publish/**/$(Build.BuildNumber).zip'
+  displayName: 'Deploy to Web App (Linux)'
