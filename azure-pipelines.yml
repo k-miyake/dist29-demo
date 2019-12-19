@@ -19,7 +19,7 @@ steps:
   inputs:
     Contents: |
       .nuxt/**/*
-      /server/**/*
+      server/**/*
       package*.json
     TargetFolder: 'publish'
 
