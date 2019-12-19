@@ -44,5 +44,5 @@ steps:
     appName: 'nuxt-ci'
     deployToSlotOrASE: true
     slotName: az-pipelines
-    package: '$(Build.SourcesDirectory)/publish/**/$(Build.BuildNumber).zip'
+    package: '$(Pipeline.Workspace)/**/$(Build.BuildNumber).zip'
   displayName: 'Deploy to Web App (Linux)'
