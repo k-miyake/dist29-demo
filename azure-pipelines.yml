@@ -20,6 +20,7 @@ steps:
     Contents: |
       .nuxt/**/*
       server/**/*
+      nuxt.config.js
       package*.json
     TargetFolder: 'publish'
 
