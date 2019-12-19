@@ -25,4 +25,14 @@ steps:
 - script: |
     npm ci --production
   workingDirectory: 'publish'
-  displayName: 'npm ci --production'
+  displayName: 'npm install for production'
+
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: 'publish'
+    includeRootFolder: false
+    archiveType: 'zip'
+    archiveFile: '$(Build.BuildNumber).zip'
+
+- publish: $(Build.BuildNumber).zip
+  artifact: packed
